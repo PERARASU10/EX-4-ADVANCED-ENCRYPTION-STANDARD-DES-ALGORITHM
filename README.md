@@ -27,6 +27,7 @@ for (int i = 0; i < input_len; i++) {
 int main() {
 char url[] = "https://lms2.ai.saveetha.in";
 char key[] = "secretkey"; 
+printf("\n\n\n     *****AES Encryption and decryption*****\n\n\n");
 
 printf("Original URL: %s\n", url);
 
@@ -40,7 +41,9 @@ return 0;
 }
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/f9312d20-4344-4313-aa40-9313d0c6aad4)
+
+![image](https://github.com/user-attachments/assets/a96025f7-6148-4fca-931a-8d74ce245d11)
+
 
 
 ## RESULT: 
