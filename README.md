@@ -1,4 +1,4 @@
-# EX-7-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
+# EX-4-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
 
 ## Aim:
   To use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption.
@@ -20,30 +20,32 @@ int input_len = strlen(input);
 int key_len = strlen(key);
 
 for (int i = 0; i < input_len; i++) {
-    input[i] = input[i] ^ key[i % key_len];
+    input[i] = input[i] ^ key[i % key_len]; 
 }
 }
 
 int main() {
-    printf("\n\n\n\n      ***** ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM *****\n\n\n");
-    
-char url[] = "PERARASU";
+char url[] = "https://lms2.ai.saveetha.in";
 char key[] = "secretkey"; 
 
-printf("Original text: %s\n", url);
+printf("Original URL: %s\n", url);
 
 xor_encrypt_decrypt(url, key);
-printf("Encrypted text: %s\n", url);
+printf("Encrypted URL: %s\n", url);
 
 xor_encrypt_decrypt(url, key);
-printf("Decrypted text: %s\n", url);
+printf("Decrypted URL: %s\n", url);
 
 return 0;
 }
-
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/9365d2bc-469c-4858-ab15-511b4c0ada03)
+![image](https://github.com/user-attachments/assets/f9312d20-4344-4313-aa40-9313d0c6aad4)
+
 
 ## RESULT: 
-The execution program is successfully executed.
+AES Encryption:
+The AES algorithm successfully encrypts the given plaintext into ciphertext and decrypts it back into plaintext using a symmetric key and initialization vector.
+DES Encryption:
+The DES algorithm successfully encrypts the given plaintext into ciphertext and decrypts it back into plaintext using a symmetric key.
+
